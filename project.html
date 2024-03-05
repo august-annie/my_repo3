@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Jura&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="project.css">
+
+    <title>Explore Projects</title>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black customNav">
+      <a class="navbar-brand" href="#">ANNIE LEE</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="project.html">PROJECT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="bio.html">BIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resume.html">RESUME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="photography.html">PHOTOGRAPHY</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var currentUrl = window.location.pathname;
+        var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    
+        navLinks.forEach(function(navLink) {
+          if (navLink.getAttribute('href') === currentUrl) {
+            navLink.parentNode.classList.add('active');
+          }
+        });
+      });
+    </script>
+
+      <div class="portfolio">
+        <div class="portfolioSection">
+          <h1 class="heading">Project</h1>
+          <div class="space">
+          <p class="body">Welcome to my project portfolio page! Here, you'll discover a collection of my recent projects spanning UI/UX design, frontend development, and graphic design. Each project is a testament to problem-solving and creative thinking in the realm of user experience and interface design.</p>
+          <p class="body">Join me on this journey as I showcase how I tackle challenges, improve user experiences, and deliver innovative solutions.</p>
+        </div>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <div class="column">
+          <div class="first-column">
+            <a href="abc_news.html" target="_blank" onclick="openPopup('abc_news.html')">
+              <img src="ABC News Navigation.jpg" class="image" alt="ABC News Navigation Revamp">
+              <div class="myproject">
+                <div class="myprojectSection">
+                  <h2>ABC News Navigation Revamp</h2>
+                  <p class="project">Enhancing accessibility and readability through a redesigned navigation system.</p> 
+                </div>
+              </div>
+            </a>
+          </div>   
+        </div>
+      
+        <div class="column">
+          <div class="second-column">
+            <a href="rspca_redesign.html" target="_blank" onclick="openPopup('rspca_redesign.html')">
+              <img src="RSPCA Redesign Form.jpg" class="image" alt="RSPCA Redesign Form">
+              <div class="myproject">
+                <div class="myprojectSection">
+                  <h2>RSPCA Redesign Forms</h2>
+                  <p class="project">Crafting a user-friendly form to report animal cruelty: Combining empathy and efficiency in design.</p> 
+                </div>
+              </div>
+            </a>
+          </div>  
+        </div>
+      
+        <div class="column">
+          <div class="first-column">
+            <a href="ifriend_travel.html" target="_blank" onclick="openPopup('ifriend_travel.html')">
+              <img src="iFriend Travel Mobile App.jpg" class="image" alt="iFriend Travel Mobile App">
+              <div class="myproject">
+                <div class="myprojectSection">
+                  <h2>iFriend Travel Mobile App</h2>
+                  <p class="project">Streamlining travel planning: Designing a travel app to minimise trip-planning hassle and alleviate common pain points.</p> 
+                </div>
+              </div>
+            </a>
+          </div>  
+        </div>
+      
+        <div class="column">
+          <div class="second-column">
+            <a href="dome_zone.html" target="_blank" onclick="openPopup('dome_zone.html')">
+              <img src="Mental Health Mobile App.jpg" class="image" alt="Mental Health Mobile App">
+              <div class="myproject">
+                <div class="myprojectSection">
+                  <h2>Mental Health Mobile App</h2>
+                  <p class="project">Dome Zone: Seamless solution for psychologist booking. Comprehensive profiles and easy booking for a quick, reliable process.</p> 
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        function openPopup(pageUrl) {
+          event.preventDefault(); // Prevent the default link behavior
+          var popupWidth = 1000;
+          var popupHeight = 1000;
+          var leftPosition = (window.screen.width - popupWidth) / 2;
+          var topPosition = (window.screen.height - popupHeight) / 2;
+          var popupOptions = 'width=' + popupWidth + ',height=' + popupHeight + ',top=' + topPosition + ',left=' + leftPosition;
+          
+          window.open(pageUrl, 'popupWindow', popupOptions);
+        }
+      </script>
+      
+
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted">© 2024 Annie Lee's UX UI Design Portfolio. All rights reserved.</span>
+        </div>
+    </footer>
+
+        
+    </body>
+</html>

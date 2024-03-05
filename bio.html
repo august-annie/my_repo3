@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Jura&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bio.css">
+
+    <title>Biography</title>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black customNav">
+      <a class="navbar-brand" href="#">ANNIE LEE</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="project.html">PROJECT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="bio.html">BIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resume.html">RESUME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="photography.html">PHOTOGRAPHY</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var currentUrl = window.location.pathname;
+        var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    
+        navLinks.forEach(function(navLink) {
+          if (navLink.getAttribute('href') === currentUrl) {
+            navLink.parentNode.classList.add('active');
+          }
+        });
+      });
+    </script>
+    
+      <div class="portfolio">
+        <div class="portfolioSection">
+          <h1 class="heading">Biography</h1>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <div class="column">
+          <div class="first-column">
+            <p class="body">As a UX/UI freelancer, my passion lies in problem-solving and creating user-centric solutions. Through my projects, I am committed to addressing real-world challenges by deeply understanding user needs and preferences. Leveraging my expertise in typography, persona creation, and human-computer interaction, I craft innovative designs that not only solve problems but also enhance the overall user experience.</p>
+            <p class="body">In addition to my freelance work, I am the founder of LE_MUNCO Candles & Decor, where I apply the same problem-solving approach to ensure a seamless online shopping experience for customers. By integrating web design, photography, and video content creation, I strive to create engaging platforms that meet user expectations and preferences.</p>
+            <p class="body">Outside of work, I am an avid badminton player and continuously seek to expand my knowledge in user psychology and human-computer interaction. My goal is to create products and experiences that resonate with users on a deep level, ultimately enriching their lives and addressing their needs.</p>
+            <p class="body">Please feel free to explore my projects to see examples of how I've applied problem-solving and user-centric design principles to various projects. Thank you for your interest!</p>
+          </div>   
+        </div>
+
+          <div class="column">
+            <div class="second-column">
+            <img src="Mun Sum Lee.jpg" class="image" alt="My Profile Picture">
+            </div>   
+          </div>
+
+           <a href="project.html"><button>Project</button></a>
+      
+      <div class="portfolio">
+        <div class="portfolioSection">
+          <h1 class="heading">LinkedIn</h1>
+          <div class="space">
+          <p class="body">If you'd like to stay connected and explore more about my professional journey, feel free to connect with me on LinkedIn. I regularly share insights, updates, and industry-related content that might be of interest to you.</p>
+          <p class="body">Let's continue the conversation and stay connected!</p>
+        </div>
+      </div>
+      </div>
+
+      <a id="connectButton" href="https://www.linkedin.com/in/mun-sum-lee-2b46b6242/" target="_blank">
+        <button>Connect</button>
+      </a>
+      
+      <script>
+        document.getElementById('connectButton').addEventListener('click', function(event) {
+          event.preventDefault(); // Prevents the default link behavior
+          var linkedinURL = this.href;
+          window.open(linkedinURL, 'linkedinWindow', 'width=600,height=400');
+        });
+      </script>
+      
+
+    <div class="space"></div>
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted">© 2024 Annie Lee's UX UI Design Portfolio. All rights reserved.</span>
+        </div>
+    </footer>
+  
+    </body>
+</html>
