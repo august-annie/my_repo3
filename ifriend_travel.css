@@ -222,4 +222,14 @@ p {
         margin-top: 35px;
     } 
 
+    button {
+      font: black;
+      font-size: 12px;
+      font-family: sans-serif;
+      border-radius: 25px;
+      padding: 10px 30px 10px 30px;
+      margin: 40px;
+      margin-top: 10px;
+  }
+
   }
