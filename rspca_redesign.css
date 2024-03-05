@@ -1,0 +1,225 @@
+.navbar-brand {
+    color: var(--Buttons, #FFFBFB);
+    font-family: Manrope, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    margin: 40px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: right;
+    justify-content: space-around
+}
+
+.nav-link {
+    margin-right: 30px; /* Adjust the value to increase or decrease the gap */
+}
+
+
+.heading {
+    position: relative;
+    padding-bottom: 35px;
+    font-size: 88px;
+    width: 100%;
+    margin: 30px;
+    margin-top: 50px;
+}
+
+.heading::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 70px;
+    height: 5px;
+    background-color: #FFFBFB;
+    margin-top: 30px;
+}
+
+.portfolio {
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolioSection {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 65%;
+    background-color: #000;
+    border-radius: 10px;
+    animation: slideInFromLeft 1.75s ease-in-out forwards;
+ 
+}
+
+h1 {
+    color: var(--Buttons, #FFFBFB);
+    font-family: Manrope, sans-serif;
+    font-style: normal;
+    line-height: normal;
+}
+
+body {
+    background-color: #000;
+}
+
+.body {
+
+    color: var(--Buttons, #FFFBFB);
+    font-family: Manrope, sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    margin: 30px;
+}
+
+.space {
+    padding-top: 35px;
+}
+
+button {
+    font: black;
+    font-size: 16px;
+    font-family: sans-serif;
+    border-radius: 25px;
+    padding: 10px 50px 10px 50px;
+    margin: 50px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    float: right;
+}
+
+.column {
+    flex: 1 0 50%; /* Each column takes up 50% of the container width */
+    padding: 25px; 
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.first-column,
+.second-column {
+  width: 100%; /* Make each column take up full width of its parent */
+}
+
+.wrap {
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.cover {
+    flex: 1 0 50%; /* Each column takes up 50% of the container width */
+    padding: 20px; 
+}
+
+.rspca {
+  width: 65%; /* Make each column take up full width of its parent */
+}
+
+.coverphoto {
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+p {
+    margin-bottom: 35px;
+}
+
+.image {
+   width: 100%;
+}
+
+
+.footer {
+    padding: 50px 0; /* Adjust the top and bottom padding as needed */
+    background-color: #000; /* Example background color */
+    margin-top: 50px;
+}
+
+.footer .container {
+    text-align: center; /* Center the text within the footer */
+}
+
+.text-muted {
+  color: #a1a1a1;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Adjust layout for smaller screens */
+@media screen and (max-width: 768px) {
+    .wrap {
+      flex-direction: column; /* Change flex direction to stack columns vertically */
+    }
+    
+    .column {
+      width: 100%; /* Make columns take up full width */
+      margin-bottom: 20px; /* Add spacing between columns */
+    }
+
+    .text-muted {
+      font-size: 12px;
+    }
+
+  }
+
+  @media screen and (max-width: 1224px) {
+    .wrap {
+      flex-direction: column; /* Change flex direction to stack columns vertically */
+    }
+    
+    .column {
+      width: 100%; /* Make columns take up full width */
+      margin-bottom: 20px; /* Add spacing between columns */
+    }
+
+    .rspca {
+      width: 100%;
+    }
+
+  }
+
+  @keyframes slideInFromLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  
+/* Adjust layout for smaller screens */
+@media screen and (max-width: 768px) {
+    .portfolioSection {
+      padding: 20px; /* Add padding for better spacing */
+      width: 80%;
+    }
+
+    .body {
+        font-size: 18px;
+        font-weight: 100;
+    }
+    .heading {
+        position: relative;
+        padding-bottom: 20px;
+        font-size: 60px;
+        width: 100%;
+        margin: 30px;
+        margin-top: 35px;
+    } 
+
+  }
