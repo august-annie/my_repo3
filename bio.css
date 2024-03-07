@@ -75,6 +75,7 @@ body {
   font-weight: 200;
   line-height: normal;
   margin: 30px;
+  margin-top: 30px;
 }
 
 .space {
@@ -227,6 +228,7 @@ color: #a1a1a1;
       margin-bottom: 25px;
       font-weight: 100;
       margin: 5px;
+      margin-top: 30px;
   }
   .heading {
       position: relative;
