@@ -162,11 +162,12 @@ p {
 @media screen and (max-width: 768px) {
     .wrap {
       flex-direction: column; /* Change flex direction to stack columns vertically */
+      margin: 10px;
     }
     
     .column {
       width: 100%; /* Make columns take up full width */
-      margin-bottom: 20px; /* Add spacing between columns */
+      margin-bottom: 0px; /* Add spacing between columns */
     }
 
     .text-muted {
@@ -180,14 +181,40 @@ p {
       flex-direction: column; /* Change flex direction to stack columns vertically */
       margin-bottom: 0;
     }
+
+    .coverphoto {
+      margin: 10px;
+      margin-bottom: 0;
+    }
     
     .column {
       width: 100%; /* Make columns take up full width */
-      margin-bottom: 20px; /* Add spacing between columns */
+      margin-bottom: 0px; /* Add spacing between columns */
     }
 
     .abcnews {
       width: 100%;
+    }
+
+    h2 {
+      font-size: 22px;
+      font-family: sans-serif;
+      margin-bottom: 20px;
+      margin-top: 20px;
+  }
+  
+    p {
+        margin-bottom: 20px;
+    }
+
+    .text-muted {
+      font-size: 12px;
+    }
+
+    .navbar-brand {
+      font-size: 18px;
+      font-weight: 100;
+      margin: 20px;
     }
 
   }
@@ -206,25 +233,28 @@ p {
   
 /* Adjust layout for smaller screens */
 @media screen and (max-width: 768px) {
-    .portfolioSection {
-      padding: 20px; /* Add padding for better spacing */
-      width: 80%;
-    }
+  .portfolioSection {
+    padding: 20px; /* Add padding for better spacing */
+    width: 100%;
+  }
 
-    .body {
-        font-size: 18px;
-        font-weight: 100;
-    }
-    .heading {
-        position: relative;
-        padding-bottom: 20px;
-        font-size: 60px;
-        width: 100%;
-        margin: 30px;
-        margin-top: 35px;
-    }
-
-    button {
+  .body {
+      font-size: 18px;
+      font-family: sans-serif;
+      margin-bottom: 25px;
+      font-weight: 100;
+      margin: 10px;
+  }
+  .heading {
+      position: relative;
+      padding-bottom: 20px;
+      font-size: 60px;
+      width: 100%;
+      margin: 10px;
+      margin-top: 35px;
+  }
+  
+  button {
       font: black;
       font-size: 12px;
       font-family: sans-serif;
@@ -233,6 +263,5 @@ p {
       margin: 40px;
       margin-top: 10px;
   }
-  
 
-  }
+}

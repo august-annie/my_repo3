@@ -173,24 +173,6 @@ button {
   
   /* Adjust layout for smaller screens */
   @media screen and (max-width: 768px) {
-    .wrap {
-      flex-direction: column; /* Change flex direction to stack columns vertically */
-    }
-    
-    .column {
-      width: 100%; /* Make columns take up full width */
-      margin-bottom: 10px; /* Add spacing between columns */
-    }
-
-    .myproject {
-      padding: 15px; /* Adjust padding as needed */
-    }
-
-    .project {
-      font-size: 16px;
-      font-weight: 100;
-    }
-
     h2 {
         font-size: 22px;
         font-family: sans-serif;
@@ -205,6 +187,12 @@ button {
     .text-muted {
       font-size: 12px;
     }
+
+    .navbar-brand {
+      font-size: 18px;
+      font-weight: 100;
+      margin: 20px;
+  }
 
   }
 
@@ -222,34 +210,35 @@ button {
   
 /* Adjust layout for smaller screens */
 @media screen and (max-width: 768px) {
-    .portfolioSection {
-      padding: 20px; /* Add padding for better spacing */
-      width: 80%;
-    }
-
-    .body {
-        font-size: 18px;
-        font-family: sans-serif;
-        margin-bottom: 25px;
-        font-weight: 100;
-    }
-    .heading {
-        position: relative;
-        padding-bottom: 20px;
-        font-size: 60px;
-        width: 100%;
-        margin: 30px;
-        margin-top: 35px;
-    }
-    
-    button {
-        font: black;
-        font-size: 12px;
-        font-family: sans-serif;
-        border-radius: 25px;
-        padding: 10px 30px 10px 30px;
-        margin: 40px;
-        margin-top: 10px;
-    }
-
+  .portfolioSection {
+    padding: 20px; /* Add padding for better spacing */
+    width: 100%;
   }
+
+  .body {
+      font-size: 18px;
+      font-family: sans-serif;
+      margin-bottom: 25px;
+      font-weight: 100;
+      margin: 10px;
+  }
+  .heading {
+      position: relative;
+      padding-bottom: 20px;
+      font-size: 60px;
+      width: 100%;
+      margin: 10px;
+      margin-top: 35px;
+  }
+  
+  button {
+      font: black;
+      font-size: 12px;
+      font-family: sans-serif;
+      border-radius: 25px;
+      padding: 10px 30px 10px 30px;
+      margin: 30px;
+      margin-top: 10px;
+  }
+
+}
