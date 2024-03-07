@@ -1,23 +1,22 @@
 .navbar-brand {
-    color: var(--Buttons, #FFFBFB);
-    font-family: Manrope, sans-serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 200;
-    line-height: normal;
-    margin: 40px;
+  color: var(--Buttons, #FFFBFB);
+  font-family: Manrope, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  margin: 40px;
 }
 
 .nav-item {
-    display: flex;
-    align-items: right;
-    justify-content: space-around;
+  display: flex;
+  align-items: right;
+  justify-content: space-around
 }
 
 .nav-link {
-    margin-right: 30px; /* Adjust the value to increase or decrease the gap */
+  margin-right: 30px; /* Adjust the value to increase or decrease the gap */
 }
-
 
 .heading {
     position: relative;
@@ -198,6 +197,7 @@ button {
         font-family: sans-serif;
         margin-bottom: 20px;
         margin-top: 20px;
+        margin: 10px;
     }
     
     p {
