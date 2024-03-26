@@ -55,11 +55,38 @@
  
 }
 
+
 h1 {
     color: var(--Buttons, #FFFBFB);
     font-family: Manrope, sans-serif;
     font-style: normal;
     line-height: normal;
+}
+
+h2 {
+  position: relative;
+  padding-bottom: 0px;
+  font-size: 64px;
+  color: var(--Buttons, #FFFBFB);
+  font-family: Manrope, sans-serif;
+}
+
+h3 {
+  position: relative;
+  padding-bottom: 0px;
+  font-size: 32px;
+  color: var(--Buttons, #FFFBFB);
+  font-family: Manrope, sans-serif;
+  font-weight: 600;
+}
+
+.font {
+  margin: 30px;
+}
+
+.fontOne {
+  margin: 30px;
+  font-style: oblique;
 }
 
 body {
@@ -72,7 +99,6 @@ body {
     font-family: Manrope, sans-serif;
     font-size: 22px;
     font-style: normal;
-    font-weight: 200;
     line-height: normal;
     margin: 30px;
 }
@@ -93,22 +119,18 @@ button {
     float: right;
 }
 
-.column {
-    flex: 1 0 50%; /* Each column takes up 50% of the container width */
-    padding: 25px; 
-    animation: fadeIn 1.5s ease-in-out forwards;
+.content {
+  display: flex;
+  justify-content: space-between;
 }
 
-.first-column,
-.second-column {
-  width: 100%; /* Make each column take up full width of its parent */
-}
-
-.wrap {
-    margin: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 10px;
+.contentSection {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 65%;
+  background-color: #000;
+  border-radius: 10px;
 }
 
 .cover {
@@ -116,22 +138,30 @@ button {
     padding: 20px; 
 }
 
-.abcnews {
-  width: 65%; /* Make each column take up full width of its parent */
-}
-
-.coverphoto {
-    margin: 30px;
-    display: flex;
-    flex-wrap: wrap; 
-}
 
 p {
     margin-bottom: 35px;
 }
 
+.bullet-point {
+  margin-left: 30px; /* Adjust the margin as needed */
+  padding-left: 1em; /* Adjust the padding as needed */
+  text-indent: -1em; /* Adjust the text indent to align bullets properly */
+  display: block;
+  list-style: none; /* Remove default list-style */
+}
+
+.bullet-point::before {
+  content: "\2022"; /* Unicode character for bullet point */
+  color: #FFFBFB; /* Adjust bullet point color as needed */
+  display: inline-block;
+  width: 5px; /* Adjust bullet point width as needed */
+  margin-left: 1em; /* Adjust the margin to align bullet points properly */
+}
+
 .image {
    width: 100%;
+   margin: 30px;
 }
 
 
@@ -160,16 +190,6 @@ p {
   
   /* Adjust layout for smaller screens */
 @media screen and (max-width: 768px) {
-    .wrap {
-      flex-direction: column; /* Change flex direction to stack columns vertically */
-      margin: 10px;
-    }
-    
-    .column {
-      width: 100%; /* Make columns take up full width */
-      margin-bottom: 0px; /* Add spacing between columns */
-    }
-
     .text-muted {
       font-size: 12px;
     }
@@ -177,34 +197,23 @@ p {
   }
 
   @media screen and (max-width: 1224px) {
-    .wrap {
-      flex-direction: column; /* Change flex direction to stack columns vertically */
-      margin-bottom: 0;
-    }
-
-    .coverphoto {
-      margin: 10px;
-      margin-bottom: 0;
-    }
-    
-    .column {
-      width: 100%; /* Make columns take up full width */
-      margin-bottom: 0px; /* Add spacing between columns */
-    }
-
-    .abcnews {
+    .contentSection {
+      padding: 20px; /* Add padding for better spacing */
       width: 100%;
     }
 
+    h3 {
+      font-size: 26px;
+      font-weight: 500;
+    }
+
     h2 {
-      font-size: 22px;
-      font-family: sans-serif;
-      margin-bottom: 20px;
-      margin-top: 20px;
+      font-size: 42px;
   }
+
   
     p {
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
 
     .text-muted {
@@ -238,11 +247,19 @@ p {
     width: 100%;
   }
 
+  .contentSection {
+    width: 95%;
+  }
+
+  .image {
+    width: 100%;
+    margin: 10px;
+ }
+
   .body {
       font-size: 18px;
       font-family: sans-serif;
-      margin-bottom: 25px;
-      font-weight: 100;
+      font-weight: 0;
       margin: 10px;
   }
   .heading {
@@ -253,15 +270,27 @@ p {
       margin: 10px;
       margin-top: 35px;
   }
-  
+
+  .font {
+    margin: 10px;
+  }
+
+  .fontOne {
+    margin: 10px;
+  }
+
   button {
       font: black;
       font-size: 12px;
       font-family: sans-serif;
       border-radius: 25px;
       padding: 10px 30px 10px 30px;
-      margin: 40px;
+      margin: 30px;
       margin-top: 10px;
   }
+
+  .bullet-point {
+    margin-left: 10px; /* Adjust margin for bullet point on smaller screens */
+}
 
 }
