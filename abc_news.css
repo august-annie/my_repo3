@@ -166,7 +166,7 @@ p {
 }
 
 .image {
-   width: 100%;
+   width: 95%;
    margin: 30px;
 }
 
@@ -205,6 +205,10 @@ p {
   @media screen and (max-width: 1224px) {
     .contentSection {
       padding: 20px; /* Add padding for better spacing */
+      width: 95%;
+    }
+
+    .image {
       width: 100%;
     }
 
@@ -258,8 +262,8 @@ p {
   }
 
   .image {
-    width: 100%;
     margin: 10px;
+    width: 100%;
  }
 
   .body {
