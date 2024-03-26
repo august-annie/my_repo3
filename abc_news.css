@@ -107,16 +107,22 @@ body {
     padding-top: 35px;
 }
 
+.button-container {
+  text-align: left;
+}
+
+.button-bottom {
+  margin-left: 30px;
+}
+
 button {
-    font: black;
-    font-size: 16px;
-    font-family: sans-serif;
-    border-radius: 25px;
-    padding: 10px 50px 10px 50px;
-    margin: 50px;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    float: right;
+  font: black;
+  font-size: 16px;
+  font-family: sans-serif;
+  border-radius: 25px;
+  padding: 10px 50px;
+  margin: 10px;
+  margin-left: 30px;
 }
 
 .content {
@@ -279,13 +285,17 @@ p {
     margin: 10px;
   }
 
+  .button-bottom {
+    margin-left: 20px;
+  }
+
   button {
       font: black;
       font-size: 12px;
       font-family: sans-serif;
       border-radius: 25px;
       padding: 10px 30px 10px 30px;
-      margin: 30px;
+      margin: 10px;
       margin-top: 10px;
   }
 
