@@ -1,266 +1,310 @@
 .navbar-brand {
-    color: var(--Buttons, #FFFBFB);
-    font-family: Manrope, sans-serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 200;
-    line-height: normal;
-    margin: 40px;
+  color: var(--Buttons, #FFFBFB);
+  font-family: Manrope, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  margin: 40px;
 }
 
 .nav-item {
-    display: flex;
-    align-items: right;
-    justify-content: space-around
+  display: flex;
+  align-items: right;
+  justify-content: space-around
 }
 
 .nav-link {
-    margin-right: 30px; /* Adjust the value to increase or decrease the gap */
+  margin-right: 30px; /* Adjust the value to increase or decrease the gap */
 }
 
 
 .heading {
-    position: relative;
-    padding-bottom: 35px;
-    font-size: 88px;
-    width: 100%;
-    margin: 30px;
-    margin-top: 50px;
+  position: relative;
+  padding-bottom: 35px;
+  font-size: 88px;
+  width: 100%;
+  margin: 30px;
+  margin-top: 50px;
 }
 
 .heading::after {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 70px;
-    height: 5px;
-    background-color: #FFFBFB;
-    margin-top: 30px;
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 70px;
+  height: 5px;
+  background-color: #FFFBFB;
+  margin-top: 30px;
 }
 
 .portfolio {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .portfolioSection {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    width: 65%;
-    background-color: #000;
-    border-radius: 10px;
-    animation: slideInFromLeft 1.75s ease-in-out forwards;
- 
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 65%;
+  background-color: #000;
+  border-radius: 10px;
+  animation: slideInFromLeft 1.75s ease-in-out forwards;
+
 }
 
+
 h1 {
-    color: var(--Buttons, #FFFBFB);
-    font-family: Manrope, sans-serif;
-    font-style: normal;
-    line-height: normal;
+  color: var(--Buttons, #FFFBFB);
+  font-family: Manrope, sans-serif;
+  font-style: normal;
+  line-height: normal;
+}
+
+h2 {
+position: relative;
+padding-bottom: 0px;
+font-size: 64px;
+color: var(--Buttons, #FFFBFB);
+font-family: Manrope, sans-serif;
+}
+
+h3 {
+position: relative;
+padding-bottom: 0px;
+font-size: 32px;
+color: var(--Buttons, #FFFBFB);
+font-family: Manrope, sans-serif;
+font-weight: 600;
+}
+
+.font {
+margin: 30px;
+}
+
+.fontOne {
+margin: 30px;
+font-style: oblique;
 }
 
 body {
-    background-color: #000;
+  background-color: #000;
 }
 
 .body {
 
-    color: var(--Buttons, #FFFBFB);
-    font-family: Manrope, sans-serif;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 200;
-    line-height: normal;
-    margin: 30px;
+  color: var(--Buttons, #FFFBFB);
+  font-family: Manrope, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  line-height: normal;
+  margin: 30px;
 }
 
 .space {
-    padding-top: 35px;
+  padding-top: 35px;
+}
+
+.button-container {
+text-align: left;
+}
+
+.button-bottom {
+margin-left: 30px;
 }
 
 button {
-    font: black;
-    font-size: 16px;
-    font-family: sans-serif;
-    border-radius: 25px;
-    padding: 10px 50px 10px 50px;
-    margin: 50px;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    float: right;
+font: black;
+font-size: 16px;
+font-family: sans-serif;
+border-radius: 25px;
+padding: 10px 50px;
+margin: 10px;
+margin-left: 30px;
 }
 
-.column {
-    flex: 1 0 50%; /* Each column takes up 50% of the container width */
-    padding: 25px; 
-    animation: fadeIn 1.5s ease-in-out forwards;
+.content {
+display: flex;
+justify-content: space-between;
 }
 
-.first-column,
-.second-column {
-  width: 100%; /* Make each column take up full width of its parent */
-}
-
-.wrap {
-    margin: 30px;
-    display: flex;
-    flex-wrap: wrap; 
+.contentSection {
+display: flex;
+flex-direction: column;
+padding: 20px;
+width: 65%;
+background-color: #000;
+border-radius: 10px;
 }
 
 .cover {
-    flex: 1 0 50%; /* Each column takes up 50% of the container width */
-    padding: 20px; 
+  flex: 1 0 50%; /* Each column takes up 50% of the container width */
+  padding: 20px; 
 }
 
-.rspca {
-  width: 65%; /* Make each column take up full width of its parent */
-}
-
-.coverphoto {
-    margin: 30px;
-    display: flex;
-    flex-wrap: wrap; 
-}
 
 p {
   margin-bottom: 35px;
 }
 
+.bullet-point {
+margin-left: 30px; /* Adjust the margin as needed */
+padding-left: 1em; /* Adjust the padding as needed */
+text-indent: -1em; /* Adjust the text indent to align bullets properly */
+display: block;
+list-style: none; /* Remove default list-style */
+}
+
+.bullet-point::before {
+content: "\2022"; /* Unicode character for bullet point */
+color: #FFFBFB; /* Adjust bullet point color as needed */
+display: inline-block;
+width: 5px; /* Adjust bullet point width as needed */
+margin-left: 1em; /* Adjust the margin to align bullet points properly */
+}
+
 .image {
-   width: 100%;
+ width: 95%;
+ margin: 30px;
 }
 
 
 .footer {
-    padding: 50px 0; /* Adjust the top and bottom padding as needed */
-    background-color: #000; /* Example background color */
-    margin-top: 50px;
+  padding: 50px 0; /* Adjust the top and bottom padding as needed */
+  background-color: #000; /* Example background color */
+  margin-top: 50px;
 }
 
 .footer .container {
-    text-align: center; /* Center the text within the footer */
+  text-align: center; /* Center the text within the footer */
 }
 
 .text-muted {
-  color: #a1a1a1;
+color: #a1a1a1;
 }
 
 @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+  from {
+    opacity: 0;
   }
-  
-  /* Adjust layout for smaller screens */
+  to {
+    opacity: 1;
+  }
+}
+
+/* Adjust layout for smaller screens */
 @media screen and (max-width: 768px) {
-  .wrap {
-    flex-direction: column; /* Change flex direction to stack columns vertically */
-    margin: 10px;
+  .text-muted {
+    font-size: 12px;
   }
-  
-  .column {
-    width: 100%; /* Make columns take up full width */
-    margin-bottom: 0px; /* Add spacing between columns */
+
+}
+
+@media screen and (max-width: 1224px) {
+  .contentSection {
+    padding: 20px; /* Add padding for better spacing */
+    width: 95%;
+  }
+
+  .image {
+    width: 100%;
+  }
+
+  h3 {
+    font-size: 26px;
+    font-weight: 500;
+  }
+
+  h2 {
+    font-size: 42px;
+}
+
+
+  p {
+      margin-bottom: 40px;
   }
 
   .text-muted {
     font-size: 12px;
   }
 
+  .navbar-brand {
+    font-size: 18px;
+    font-weight: 100;
+    margin: 20px;
   }
 
-  @media screen and (max-width: 1224px) {
-    .wrap {
-      flex-direction: column; /* Change flex direction to stack columns vertically */
-      margin-bottom: 0;
-    }
+}
 
-    .coverphoto {
-      margin: 10px;
-      margin-bottom: 0;
-    }
-    
-    .column {
-      width: 100%; /* Make columns take up full width */
-      margin-bottom: 0px; /* Add spacing between columns */
-    }
-
-    h2 {
-      font-size: 22px;
-      font-family: sans-serif;
-      margin-bottom: 20px;
-      margin-top: 20px;
-    }
-  
-    p {
-      margin-bottom: 20px;
-    }
-
-    .text-muted {
-      font-size: 12px;
-    }
-
-    .navbar-brand {
-      font-size: 18px;
-      font-weight: 100;
-      margin: 20px;
-    }
-
-    .rspca {
-      width: 100%;
-    }
-
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
   }
-
-  @keyframes slideInFromLeft {
-    from {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
-  
-  
+}
+
+
 /* Adjust layout for smaller screens */
 @media screen and (max-width: 768px) {
-  .portfolioSection {
-    padding: 20px; /* Add padding for better spacing */
-    width: 100%;
-  }
+.portfolioSection {
+  padding: 20px; /* Add padding for better spacing */
+  width: 100%;
+}
 
-  .body {
-      font-size: 18px;
-      font-family: sans-serif;
-      margin-bottom: 25px;
-      font-weight: 100;
-      margin: 10px;
-  }
-  .heading {
-      position: relative;
-      padding-bottom: 20px;
-      font-size: 60px;
-      width: 100%;
-      margin: 10px;
-      margin-top: 35px;
-  }
-  
-  button {
-      font: black;
-      font-size: 12px;
-      font-family: sans-serif;
-      border-radius: 25px;
-      padding: 10px 30px 10px 30px;
-      margin: 40px;
-      margin-top: 10px;
-  }
+.contentSection {
+  width: 95%;
+}
+
+.image {
+  margin: 10px;
+  width: 100%;
+}
+
+.body {
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 0;
+    margin: 10px;
+}
+.heading {
+    position: relative;
+    padding-bottom: 20px;
+    font-size: 60px;
+    width: 100%;
+    margin: 10px;
+    margin-top: 35px;
+}
+
+.font {
+  margin: 10px;
+}
+
+.fontOne {
+  margin: 10px;
+}
+
+.button-bottom {
+  margin-left: 20px;
+}
+
+button {
+    font: black;
+    font-size: 12px;
+    font-family: sans-serif;
+    border-radius: 25px;
+    padding: 10px 30px 10px 30px;
+    margin: 10px;
+    margin-top: 10px;
+}
+
+.bullet-point {
+  margin-left: 10px; /* Adjust margin for bullet point on smaller screens */
+}
 
 }
