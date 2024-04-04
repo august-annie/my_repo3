@@ -18,6 +18,9 @@
   margin-right: 30px; /* Adjust the value to increase or decrease the gap */
 }
 
+.body.bullet-point {
+  margin-bottom: 0; /* Adjust margin between bullet points */
+}
 
 .heading {
   position: relative;
