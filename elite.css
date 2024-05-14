@@ -1,0 +1,313 @@
+.navbar-brand {
+  color: var(--Buttons, #FFFBFB);
+  font-family: Manrope, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  margin: 40px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: right;
+  justify-content: space-around
+}
+
+.nav-link {
+  margin-right: 30px; /* Adjust the value to increase or decrease the gap */
+}
+
+.body.bullet-point {
+  margin-bottom: 0; /* Adjust margin between bullet points */
+}
+
+.heading {
+  position: relative;
+  padding-bottom: 35px;
+  font-size: 88px;
+  width: 100%;
+  margin: 30px;
+  margin-top: 50px;
+}
+
+.heading::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 70px;
+  height: 5px;
+  background-color: #FFFBFB;
+  margin-top: 30px;
+}
+
+.portfolio {
+  display: flex;
+  justify-content: space-between;
+}
+
+.portfolioSection {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 65%;
+  background-color: #000;
+  border-radius: 10px;
+  animation: slideInFromLeft 1.75s ease-in-out forwards;
+
+}
+
+
+h1 {
+  color: var(--Buttons, #FFFBFB);
+  font-family: Manrope, sans-serif;
+  font-style: normal;
+  line-height: normal;
+}
+
+h2 {
+position: relative;
+padding-bottom: 0px;
+font-size: 64px;
+color: var(--Buttons, #FFFBFB);
+font-family: Manrope, sans-serif;
+}
+
+h3 {
+position: relative;
+padding-bottom: 0px;
+font-size: 32px;
+color: var(--Buttons, #FFFBFB);
+font-family: Manrope, sans-serif;
+font-weight: 600;
+}
+
+.font {
+margin: 30px;
+}
+
+.fontOne {
+margin: 30px;
+font-style: oblique;
+}
+
+body {
+  background-color: #000;
+}
+
+.body {
+
+  color: var(--Buttons, #FFFBFB);
+  font-family: Manrope, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  line-height: normal;
+  margin: 30px;
+}
+
+.space {
+  padding-top: 35px;
+}
+
+.button-container {
+text-align: left;
+}
+
+.button-bottom {
+margin-left: 30px;
+}
+
+button {
+font: black;
+font-size: 16px;
+font-family: sans-serif;
+border-radius: 25px;
+padding: 10px 50px;
+margin: 10px;
+margin-left: 30px;
+}
+
+.content {
+display: flex;
+justify-content: space-between;
+}
+
+.contentSection {
+display: flex;
+flex-direction: column;
+padding: 20px;
+width: 65%;
+background-color: #000;
+border-radius: 10px;
+}
+
+.cover {
+  flex: 1 0 50%; /* Each column takes up 50% of the container width */
+  padding: 20px; 
+}
+
+
+p {
+  margin-bottom: 35px;
+}
+
+.bullet-point {
+margin-left: 30px; /* Adjust the margin as needed */
+padding-left: 1em; /* Adjust the padding as needed */
+text-indent: -1em; /* Adjust the text indent to align bullets properly */
+display: block;
+list-style: none; /* Remove default list-style */
+}
+
+.bullet-point::before {
+content: "\2022"; /* Unicode character for bullet point */
+color: #FFFBFB; /* Adjust bullet point color as needed */
+display: inline-block;
+width: 5px; /* Adjust bullet point width as needed */
+margin-left: 1em; /* Adjust the margin to align bullet points properly */
+}
+
+.image {
+ width: 95%;
+ margin: 30px;
+}
+
+
+.footer {
+  padding: 50px 0; /* Adjust the top and bottom padding as needed */
+  background-color: #000; /* Example background color */
+  margin-top: 50px;
+}
+
+.footer .container {
+  text-align: center; /* Center the text within the footer */
+}
+
+.text-muted {
+color: #a1a1a1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Adjust layout for smaller screens */
+@media screen and (max-width: 768px) {
+  .text-muted {
+    font-size: 12px;
+  }
+
+}
+
+@media screen and (max-width: 1224px) {
+  .contentSection {
+    padding: 20px; /* Add padding for better spacing */
+    width: 95%;
+  }
+
+  .image {
+    width: 100%;
+  }
+
+  h3 {
+    font-size: 26px;
+    font-weight: 500;
+  }
+
+  h2 {
+    font-size: 42px;
+}
+
+
+  p {
+      margin-bottom: 40px;
+  }
+
+  .text-muted {
+    font-size: 12px;
+  }
+
+  .navbar-brand {
+    font-size: 18px;
+    font-weight: 100;
+    margin: 20px;
+  }
+
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+/* Adjust layout for smaller screens */
+@media screen and (max-width: 768px) {
+.portfolioSection {
+  padding: 20px; /* Add padding for better spacing */
+  width: 100%;
+}
+
+.contentSection {
+  width: 95%;
+}
+
+.image {
+  margin: 10px;
+  width: 100%;
+}
+
+.body {
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 0;
+    margin: 10px;
+}
+.heading {
+    position: relative;
+    padding-bottom: 20px;
+    font-size: 60px;
+    width: 100%;
+    margin: 10px;
+    margin-top: 35px;
+}
+
+.font {
+  margin: 10px;
+}
+
+.fontOne {
+  margin: 10px;
+}
+
+.button-bottom {
+  margin-left: 20px;
+}
+
+button {
+    font: black;
+    font-size: 12px;
+    font-family: sans-serif;
+    border-radius: 25px;
+    padding: 10px 30px 10px 30px;
+    margin: 10px;
+    margin-top: 10px;
+}
+
+.bullet-point {
+  margin-left: 10px; /* Adjust margin for bullet point on smaller screens */
+}
+
+}
